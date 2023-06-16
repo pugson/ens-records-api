@@ -37,7 +37,6 @@ export type EnsjsProfile = {
 export type FormattedProfile = {
   name?: string;
   address?: string;
-  avatar?: string | null;
   contentHash?: string | DecodedContentHash | null;
   records?: {
     [key: string | number]: string;
