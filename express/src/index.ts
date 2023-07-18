@@ -17,6 +17,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/:addressOrName", handleEnsProfile);
 app.get("/content-hash/:addressOrName", handleUncachedContentHash);
+app.get("/:addressOrName", handleEnsProfile);
 app.post("/batch", handleBatchResolve);
